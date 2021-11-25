@@ -1,8 +1,6 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.Vehicles;
 
 public class CropDuster extends AirCraft{
-
-
     public void fly() {
 
     }
