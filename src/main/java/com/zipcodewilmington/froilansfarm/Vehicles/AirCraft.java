@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 
 public abstract class AirCraft implements Vehicle{
 
-    public void fly() {
-
+    public String fly() {
+        return "Ready for Takeoff!";
     }
 }
