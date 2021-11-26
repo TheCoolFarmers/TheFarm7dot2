@@ -4,6 +4,7 @@ import com.zipcodewilmington.froilansfarm.Eater;
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.NoiseMaker;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,9 +14,12 @@ public abstract class Person implements NoiseMaker, Eater {
     private List<Edible> mealsEaten;
 
 
+
     public Person(String name){
         this.name = name;
+
         this.mealsEaten = new ArrayList<>();
+
 
     }
 

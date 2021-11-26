@@ -15,6 +15,7 @@ public abstract class Rider extends Person {
         rideable.setRider(this);
     }
 
+
     public Boolean hasRideable(){
         if(rideable == null){
             return false;
@@ -23,6 +24,7 @@ public abstract class Rider extends Person {
         }
 
     }
+
 
 
 }

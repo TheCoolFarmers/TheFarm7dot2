@@ -1,7 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Animal;
 
+
 import com.zipcodewilmington.froilansfarm.Crop.EarCorn;
 import com.zipcodewilmington.froilansfarm.Farmers.Farmer;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,6 +31,7 @@ public class HorseTest {
     }
 
     @Test
+
     public void testGetName(){
         //given
         //when
@@ -46,14 +49,17 @@ public class HorseTest {
         //then
         Assert.assertTrue(horse.hasEaten());
 
+
     }
 
     @Test
     public void hasRider() {
+
         Assert.assertFalse(horse.hasRider());
         //given
         //when
         horse.setRider(new Farmer("Dave"));
+
         //then
         Assert.assertTrue(horse.hasRider());
     }

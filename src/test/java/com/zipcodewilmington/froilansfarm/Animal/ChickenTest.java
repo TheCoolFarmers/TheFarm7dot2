@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Animal;
 
+
 import com.zipcodewilmington.froilansfarm.Crop.EarCorn;
 import org.junit.Assert;
 import org.junit.Before;
@@ -33,5 +34,6 @@ public class ChickenTest {
         String actual = chicken.makeNoise();
         //then
         Assert.assertEquals("Bawk Bawk!", actual);
+
     }
 }
