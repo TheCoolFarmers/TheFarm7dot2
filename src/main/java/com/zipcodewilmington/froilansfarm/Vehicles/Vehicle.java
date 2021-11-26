@@ -5,7 +5,7 @@ import com.zipcodewilmington.froilansfarm.Rideable;
 
 public interface Vehicle extends NoiseMaker, Rideable {
 
-
+    public boolean canRide();
 
 
 

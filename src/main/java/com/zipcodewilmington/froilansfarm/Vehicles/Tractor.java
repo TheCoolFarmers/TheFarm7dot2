@@ -15,7 +15,7 @@ public class Tractor implements FarmVehicle {
 
     }
 
-    // Tractor extends FarmVehicle, which implements Vehicle //
+    // Tractor implements FarmVehicle, which implements Vehicle //
 
     public void harvest(Edible edible) {
 
@@ -33,7 +33,7 @@ public class Tractor implements FarmVehicle {
 
 
 
-    public boolean canRide(Rider Rider) {
+    public boolean canRide() {
 
         return true;
     }

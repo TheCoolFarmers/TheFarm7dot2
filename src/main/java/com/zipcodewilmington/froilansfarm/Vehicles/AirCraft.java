@@ -7,11 +7,13 @@ public abstract class AirCraft implements Vehicle{
 
     protected Rider rider;
 
+
     public String fly() {
         return "Ready for Takeoff!";
     }
 
 
-
-
+    public boolean canRide() {
+        return true;
+    }
 }

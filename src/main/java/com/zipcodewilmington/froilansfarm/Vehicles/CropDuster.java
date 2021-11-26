@@ -36,12 +36,12 @@ public class CropDuster extends AirCraft implements FarmVehicle {
         return fertilizedList.size();
     }
 
+
+
     @Override
     public String makeNoise() {
         return "Vrooooooooooom";
     }
-
-
 
 
     public boolean canRide(Rider Rider) {
@@ -51,9 +51,9 @@ public class CropDuster extends AirCraft implements FarmVehicle {
 
     @Override
     public Boolean hasRider() {
-        if(rider != null) {
+        if (rider != null) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }

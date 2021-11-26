@@ -6,4 +6,8 @@ public interface Rideable {
 
     public void setRider(Rider rider);
 
+    public boolean canRide();
+
+
+
 }
