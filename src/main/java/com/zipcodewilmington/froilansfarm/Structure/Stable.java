@@ -17,13 +17,14 @@ private List<Horse> horseList = new ArrayList<Horse>();
     }
 
 
-    public Horse getByName(String name) {
-        for (Horse horse : horseList){
-           if(horse.getName().equals(name)){
-               return horse;
-           }
 
+    public Horse getByName(String name) {
+        for (Horse horse : horseList) {
+            if (horse.getName().equals(name)) {
+                return horse;
+            }
         }
         return null;
     }
+
 }
