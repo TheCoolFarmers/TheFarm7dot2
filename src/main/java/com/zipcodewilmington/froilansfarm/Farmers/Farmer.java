@@ -1,28 +1,38 @@
 package com.zipcodewilmington.froilansfarm.Farmers;
 
-import com.zipcodewilmington.froilansfarm.Eater;
-import com.zipcodewilmington.froilansfarm.Edible;
-import com.zipcodewilmington.froilansfarm.Farmers.Person;
-import com.zipcodewilmington.froilansfarm.NoiseMaker;
-import com.zipcodewilmington.froilansfarm.Rider;
+import com.zipcodewilmington.froilansfarm.*;
 
-public class Farmer extends Person implements Rider, Eater, NoiseMaker {
+import com.zipcodewilmington.froilansfarm.Crop.Crop;
+import com.zipcodewilmington.froilansfarm.Crop.CropRow;
+import com.zipcodewilmington.froilansfarm.Farmers.Person;
+
+public class Farmer extends Rider implements Eater, Botanist {
+
 
     public String name;
 
+
     public Farmer(String name){
-        this.name = name;
+        super(name);
 
     }
 
 
     @Override
-    public void eat(Edible object) {
+    public String getName() {
+        return name;
+
 
     }
 
+
     @Override
-    public String makeNoise() {
-        return null;
+    public void plantCrop(CropRow cropRow, Crop crop) {
+        cropRow.add(crop);
+    }
+
+    @Override
+    public void ride(Rideable rideable) {
+
     }
 }

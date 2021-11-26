@@ -1,6 +1,9 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Rideable<AnyRider extends Rider> {
+public interface Rideable {
 
-    boolean canRide(AnyRider Rider);
+    public Boolean hasRider();
+
+    public void setRider(Rider rider);
+
 }

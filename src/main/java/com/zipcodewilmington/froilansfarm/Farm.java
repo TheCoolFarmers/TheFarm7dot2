@@ -3,15 +3,13 @@ package com.zipcodewilmington.froilansfarm;
 import com.zipcodewilmington.froilansfarm.Animal.Chicken;
 import com.zipcodewilmington.froilansfarm.Animal.Horse;
 import com.zipcodewilmington.froilansfarm.Farmers.Person;
-import com.zipcodewilmington.froilansfarm.Structure.ChickenCoop;
 import com.zipcodewilmington.froilansfarm.Structure.FarmHouse;
-import com.zipcodewilmington.froilansfarm.Structure.Stable;
 import com.zipcodewilmington.froilansfarm.Structure.Structure;
 import com.zipcodewilmington.froilansfarm.Vehicles.CropDuster;
 import com.zipcodewilmington.froilansfarm.Vehicles.Tractor;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 
 public class Farm {

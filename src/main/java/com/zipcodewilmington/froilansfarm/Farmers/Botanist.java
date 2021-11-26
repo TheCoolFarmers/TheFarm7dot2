@@ -1,8 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Farmers;
 
-public class Botanist extends Farmer {
+import com.zipcodewilmington.froilansfarm.Crop.Crop;
+import com.zipcodewilmington.froilansfarm.Crop.CropRow;
 
-    public Botanist(String name) {
-        super(name);
-    }
+public interface Botanist {
+
+    public void plantCrop(CropRow cropRow, Crop crop);
 }
