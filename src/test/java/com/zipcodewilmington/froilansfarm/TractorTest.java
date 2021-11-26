@@ -34,6 +34,33 @@ public class TractorTest {
 
     }
 
+    @Test
+    public void makeNoise1() {
+        //given
+        Tractor tractor = new Tractor();
+        String expected = "*tractor sounds*";
+
+        //when
+        String actual = tractor.makeNoise();
+
+        //then
+        Assert.assertNotEquals(expected, actual);
+
+    }
+
+    @Test
+    public void makeNoise2() {
+        //given
+        Tractor tractor = new Tractor();
+        String expected = "*racecar sounds*";
+
+        //when
+        String actual = tractor.makeNoise();
+
+        //then
+        Assert.assertNotEquals(expected, actual);
+
+    }
 
 
 }

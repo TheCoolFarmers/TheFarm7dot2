@@ -20,4 +20,9 @@ public class CropDuster extends AirCraft{
         return "Time for my favorite job--fertilizing!";
 
     }
+
+    @Override
+    public String makeNoise() {
+        return "Vrooooooooooom";
+    }
 }
