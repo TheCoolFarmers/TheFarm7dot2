@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class NoiseMaker {
+public interface NoiseMaker {
+
+    String makeNoise();
 }
