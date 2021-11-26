@@ -6,15 +6,11 @@ import com.zipcodewilmington.froilansfarm.Rideable;
 
 public class Horse extends Animal implements Rideable {
 
-    private String name;
 
     public Horse(String name) {
         super(name);
     }
 
-    public String getName(){
-        return name;
-    }
 
     public String makeNoise() {
         return "Neigh!";
