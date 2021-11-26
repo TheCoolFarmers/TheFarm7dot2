@@ -11,13 +11,11 @@ import java.util.List;
 public abstract class Animal implements NoiseMaker, Eater {
 
     private String name;
-    private Integer id;
     private ArrayList<Edible> mealsEaten;
 
 
-    public Animal(String name, Integer id){
+    public Animal(String name){
             this.name = name;
-            this.id = id;
             this.mealsEaten = new ArrayList<>();
     }
 

@@ -5,8 +5,8 @@ import com.zipcodewilmington.froilansfarm.Edible;
 public class Chicken extends Animal {
 
 
-    public Chicken(String name, Integer id) {
-        super(name, id);
+    public Chicken(String name) {
+        super(name);
     }
 
     public void eat(Edible object) {
