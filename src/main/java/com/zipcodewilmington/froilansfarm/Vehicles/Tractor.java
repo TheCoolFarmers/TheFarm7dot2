@@ -1,15 +1,41 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-public class Tractor extends FarmVehicle {
+import com.zipcodewilmington.froilansfarm.Edible;
+import com.zipcodewilmington.froilansfarm.Rider;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Tractor implements FarmVehicle {
+
+    private Rider rider;
+    List<Edible> edibleList = new ArrayList<Edible>();
+
 
     public void Tractor() {
 
     }
 
+    // Tractor extends FarmVehicle, which implements Vehicle //
 
-    public String harvest() {
-        return "I'm gonna harvest till I can't harvest no more.";
+    public void harvest(Edible edible) {
+
+        edibleList.add(edible);
+    }
+
+    public Integer getCountOfHarvestedItems() {
+        return edibleList.size();
+    }
+
+    @Override
+    public String makeNoise() {
+        return "*tractor sounds*";
     }
 
 
+    @Override
+    public boolean canRide(Rider Rider) {
+        return true;
+    }
 }
+
+
