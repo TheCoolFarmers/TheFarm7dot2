@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm.Crop;
 
-public class Tomato {
+public class Tomato extends Produce{
 }
