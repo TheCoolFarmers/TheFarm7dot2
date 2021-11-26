@@ -1,4 +1,19 @@
 package com.zipcodewilmington.froilansfarm;
 
-public interface Rider {
+import com.zipcodewilmington.froilansfarm.Farmers.Person;
+
+public abstract class Rider extends Person {
+
+    private Rideable rideable;
+
+    public Rider(String name) {
+        super(name);
+    }
+
+    public void ride(Rideable rideable) {
+        this.rideable = rideable;
+        rideable.setRider(this);
+    }
+
+
 }
