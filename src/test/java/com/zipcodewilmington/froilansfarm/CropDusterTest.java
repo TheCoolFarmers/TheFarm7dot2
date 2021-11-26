@@ -63,4 +63,33 @@ public class CropDusterTest {
         Assert.assertNotEquals(expected, actual);
     }
 
+
+    @Test
+    public void makeNoise1() {
+        //given
+        CropDuster cropDuster = new CropDuster();
+        String expected = "Vrooooooooooom";
+
+        //when
+        String actual = cropDuster.makeNoise();
+
+        //then
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void makeNoise2() {
+        //given
+        CropDuster cropDuster = new CropDuster();
+        String expected = "Choo Choo";
+
+        //when
+        String actual = cropDuster.makeNoise();
+
+        //then
+        Assert.assertNotEquals(expected, actual);
+
+    }
+
 }

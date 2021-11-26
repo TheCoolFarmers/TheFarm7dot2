@@ -44,7 +44,7 @@ public class TractorTest {
         String actual = tractor.makeNoise();
 
         //then
-        Assert.assertNotEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
 
     }
 
