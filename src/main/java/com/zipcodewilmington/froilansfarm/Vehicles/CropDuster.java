@@ -2,6 +2,12 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 
 public class CropDuster extends AirCraft{
 
+    public void CropDuster() {
+
+    }
+
+
+
     @Override
     public String fly() {
 
