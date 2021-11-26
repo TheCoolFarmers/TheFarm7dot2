@@ -3,6 +3,7 @@ package com.zipcodewilmington.froilansfarm.Animal;
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.Rideable;
+import com.zipcodewilmington.froilansfarm.Rider;
 
 public class Horse extends Animal implements Rideable {
 
@@ -26,4 +27,8 @@ public class Horse extends Animal implements Rideable {
     }
 
 
+    @Override
+    public boolean canRide(Rider Rider) {
+        return false;
+    }
 }
