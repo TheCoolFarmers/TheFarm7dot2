@@ -11,6 +11,11 @@ public class Stable implements Structure<Horse> {
     private List<Horse> horseList = new ArrayList<>();
 
     @Override
+    public Integer getCount() {
+        return horseList.size();
+    }
+
+    @Override
     public void add(Horse horse) {
         horseList.add(horse);
     }
