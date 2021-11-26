@@ -15,5 +15,14 @@ public abstract class Rider extends Person {
         rideable.setRider(this);
     }
 
+    public Boolean hasRideable(){
+        if(rideable == null){
+            return false;
+        }else{
+            return true;
+        }
+
+    }
+
 
 }
