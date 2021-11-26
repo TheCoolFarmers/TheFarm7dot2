@@ -16,14 +16,19 @@ private List<Horse> horseList = new ArrayList<Horse>();
         horseList.remove(horse);
     }
 
-
+    @Override
     public Horse getByName(String name) {
-        for (Horse horse : horseList){
-           if(horse.getName().equals(name)){
-               return horse;
-           }
-
-        }
         return null;
     }
+
+
+//    public Horse getByName(String name) {
+//        for (Horse horse : horseList){
+//           if(horse.getName().equals(name)){
+//               return horse;
+//           }
+//        return null;
+//        }
+
+
 }
