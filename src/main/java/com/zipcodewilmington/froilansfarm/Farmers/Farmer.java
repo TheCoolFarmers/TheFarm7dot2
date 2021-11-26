@@ -1,9 +1,13 @@
 package com.zipcodewilmington.froilansfarm.Farmers;
 
 import com.zipcodewilmington.froilansfarm.*;
+
+import com.zipcodewilmington.froilansfarm.Crop.Crop;
+import com.zipcodewilmington.froilansfarm.Crop.CropRow;
 import com.zipcodewilmington.froilansfarm.Farmers.Person;
 
-public class Farmer extends Rider implements Eater, NoiseMaker {
+public class Farmer extends Rider implements Eater, Botanist {
+
 
     public String name;
 
@@ -17,15 +21,14 @@ public class Farmer extends Rider implements Eater, NoiseMaker {
     @Override
     public String getName() {
         return name;
+
+
     }
 
-    @Override
-    public void eat(Edible object) {
-    }
 
     @Override
-    public String makeNoise() {
-        return null;
+    public void plantCrop(CropRow cropRow, Crop crop) {
+        cropRow.add(crop);
     }
 
     @Override

@@ -16,4 +16,15 @@ public abstract class Rider extends Person {
     }
 
 
+    public Boolean hasRideable(){
+        if(rideable == null){
+            return false;
+        }else{
+            return true;
+        }
+
+    }
+
+
+
 }
