@@ -1,4 +1,9 @@
 package com.zipcodewilmington.froilansfarm.Crop;
 
-public class CornStalk {
+import com.zipcodewilmington.froilansfarm.Edible;
+
+public class CornStalk extends Crop {
+    public Edible yield(){
+        return new EarCorn();
+    }
 }

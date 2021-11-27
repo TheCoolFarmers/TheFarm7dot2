@@ -1,4 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Crop;
 
-public abstract class Produce {
+import com.zipcodewilmington.froilansfarm.Edible;
+
+public interface Produce {
+    Edible yield();
 }
