@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CropRow {
+
     private List<Crop> crops;
     public CropRow(){
         crops = new ArrayList<Crop>();
@@ -16,5 +17,6 @@ public class CropRow {
     }
     public List<Crop> getCropList() {
         return crops;
+
     }
 }

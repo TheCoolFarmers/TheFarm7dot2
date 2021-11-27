@@ -1,4 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Vehicles;
 
-public abstract class FarmVehicle {
+public interface FarmVehicle extends Vehicle {
+
+
 }
