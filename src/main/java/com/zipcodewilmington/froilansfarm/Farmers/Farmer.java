@@ -18,13 +18,6 @@ public class Farmer extends Rider implements Eater, Botanist {
     }
 
 
-    @Override
-    public String getName() {
-        return name;
-
-
-    }
-
 
     @Override
     public void plantCrop(CropRow cropRow, Crop crop) {

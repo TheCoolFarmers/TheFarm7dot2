@@ -19,8 +19,8 @@ public abstract class Animal implements NoiseMaker, Eater {
     }
 
     public Animal(String name){
-            this.name = name;
-            this.mealsEaten = new ArrayList<>();
+        this.name = name;
+        this.mealsEaten = new ArrayList<>();
     }
 
     public Boolean hasEaten(){

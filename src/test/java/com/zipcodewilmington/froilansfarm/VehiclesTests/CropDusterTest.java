@@ -163,7 +163,7 @@ public class CropDusterTest {
         boolean actual = cropDuster.hasRider();
 
         //then
-        Assert.assertNotNull(actual);
+        Assert.assertTrue(actual);
     }
 
 

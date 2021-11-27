@@ -9,15 +9,13 @@ public class Tractor implements FarmVehicle {
 
     private Rider rider;
     List<Edible> edibleList = new ArrayList<Edible>();
-    Tractor redTractor = new Tractor();
-    Tractor greenTractor = new Tractor();
 
 
     public void Tractor() {
 
     }
 
-    // Tractor implements FarmVehicle, which implements Vehicle //
+    // Tractor extends FarmVehicle, which implements Vehicle //
 
     public void harvest(Edible edible) {
 
@@ -34,25 +32,19 @@ public class Tractor implements FarmVehicle {
     }
 
 
-
-    public boolean canRide() {
-
-        return true;
-    }
-
     @Override
     public Boolean hasRider() {
-        if(rider != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return true;
     }
 
     @Override
     public void setRider(Rider rider) {
 
-        this.rider = rider;
+    }
+
+    @Override
+    public boolean canRide() {
+        return false;
     }
 }
 

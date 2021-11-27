@@ -12,7 +12,6 @@ public class CropDuster extends AirCraft implements FarmVehicle {
 
 
     List<CropRow> fertilizedList = new ArrayList<CropRow>();
-    CropDuster cropDuster = new CropDuster();
 
     public void CropDuster() {
 
@@ -37,30 +36,19 @@ public class CropDuster extends AirCraft implements FarmVehicle {
         return fertilizedList.size();
     }
 
-
-
     @Override
     public String makeNoise() {
         return "Vrooooooooooom";
     }
 
 
-    public boolean canRide(Rider Rider) {
-        return true;
-    }
-
-
     @Override
     public Boolean hasRider() {
-        if (rider != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return null;
     }
 
     @Override
     public void setRider(Rider rider) {
-        this.rider = rider;
+
     }
 }
