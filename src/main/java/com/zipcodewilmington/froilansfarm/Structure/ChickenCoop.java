@@ -12,7 +12,7 @@ public class ChickenCoop implements Structure<Chicken>{
 
     @Override
     public void add(Chicken chicken) {
-   chickenList.add(chicken);
+    chickenList.add(chicken);
     }
 
     @Override
