@@ -26,7 +26,7 @@ public class HorseTest {
         //when
         String actual = horse.makeNoise();
         //then
-        Assert.assertEquals("Neigh", actual);
+        Assert.assertEquals("Neigh!", actual);
 
     }
 
