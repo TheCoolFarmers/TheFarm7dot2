@@ -18,5 +18,40 @@ public class CornStalkTest {
         before();
         Assert.assertTrue(cornStalk instanceof Crop);
     }
-    
+    @Test
+    public void defaultHarvestingStateTest(){
+        before();
+        Assert.assertFalse(cornStalk.getHasBeenHarvested());
+    }
+    @Test
+    public void defaultFertilizingStateTest(){
+        before();
+        Assert.assertFalse(cornStalk.getHasBeenFertilized());
+    }
+    @Test
+    public void fertilizingTest(){
+        before();
+        cornStalk.fertilize();
+        Assert.assertTrue(cornStalk.getHasBeenFertilized());
+    }
+    @Test
+    public void yieldFail1Test(){
+        before();
+        Assert.assertNull(cornStalk.yield());
+    }
+    @Test
+    public void yieldFail2Test(){
+        before();
+        cornStalk.fertilize();
+        cornStalk.yield();
+        Assert.assertNull(cornStalk.yield());
+    }
+    @Test
+    public void yieldPassTest(){
+        before();
+        cornStalk.fertilize();
+        Assert.assertNotNull(cornStalk.yield());
+
+    }
+
 }
