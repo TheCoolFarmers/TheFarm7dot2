@@ -1,6 +1,9 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.Vehicles;
 
 import com.zipcodewilmington.froilansfarm.Crop.CropRow;
+import com.zipcodewilmington.froilansfarm.Farmers.Farmer;
+import com.zipcodewilmington.froilansfarm.Farmers.Pilot;
+import com.zipcodewilmington.froilansfarm.Rider;
 import com.zipcodewilmington.froilansfarm.Vehicles.CropDuster;
 import org.junit.Assert;
 import org.junit.Test;
@@ -99,6 +102,59 @@ public class CropDusterTest {
         //then
         Assert.assertNotEquals(expected, actual);
 
+    }
+
+    @Test
+    public void testGetCountOfFertilizedCrops1() {
+        //given
+        CropDuster cropDuster = new CropDuster();
+        CropRow corn1 = new CropRow();
+        CropRow corn2 = new CropRow();
+        cropDuster.fertilize(corn1);
+        cropDuster.fertilize(corn2);
+        Integer expected = 2;
+
+
+
+        //when
+        Integer actual = cropDuster.getCountOfFertilizedCrops();
+
+        //then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetCountOfFertilizedCrops2() {
+        //given
+        CropDuster cropDuster = new CropDuster();
+        CropRow corn1 = new CropRow();
+        CropRow corn2 = new CropRow();
+        cropDuster.fertilize(corn1);
+        cropDuster.fertilize(corn2);
+        Integer expected = 5;
+
+
+
+        //when
+        Integer actual = cropDuster.getCountOfFertilizedCrops();
+
+        //then
+        Assert.assertNotEquals(expected, actual);
+    }
+
+
+    @Test
+    public void testHasRider1() {
+        //given
+        CropDuster cropDuster = new CropDuster();
+        Rider rider = new Farmer("Froilanda");
+        cropDuster.setRider(rider);
+
+        //when
+        boolean actual = cropDuster.hasRider();
+
+        //then
+        Assert.assertTrue(actual);
     }
 
 }
