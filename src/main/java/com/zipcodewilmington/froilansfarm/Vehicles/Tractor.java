@@ -34,12 +34,16 @@ public class Tractor implements FarmVehicle {
 
     @Override
     public Boolean hasRider() {
-        return null;
+        if (rider == null) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     @Override
     public void setRider(Rider rider) {
-
+        this.rider = rider;
     }
 }
 

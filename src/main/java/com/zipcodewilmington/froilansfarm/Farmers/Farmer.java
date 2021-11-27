@@ -8,9 +8,7 @@ import com.zipcodewilmington.froilansfarm.Farmers.Person;
 
 public class Farmer extends Rider implements Eater, Botanist {
 
-
     public String name;
-
 
     public Farmer(String name){
         super(name);
@@ -24,8 +22,4 @@ public class Farmer extends Rider implements Eater, Botanist {
         cropRow.add(crop);
     }
 
-    @Override
-    public void ride(Rideable rideable) {
-
-    }
 }
