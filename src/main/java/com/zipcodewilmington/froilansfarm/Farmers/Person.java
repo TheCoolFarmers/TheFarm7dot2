@@ -17,7 +17,7 @@ public abstract class Person implements NoiseMaker, Eater {
     public Person(String name) {
         this.name = name;
 
-     this.mealsEaten = new ArrayList<>();
+        this.mealsEaten = new ArrayList<>();
 
 
     }
