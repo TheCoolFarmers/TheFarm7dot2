@@ -12,6 +12,7 @@ public class Tractor implements FarmVehicle {
     Tractor redTractor = new Tractor();
     Tractor greenTractor = new Tractor();
 
+
     public void Tractor() {
 
     }
