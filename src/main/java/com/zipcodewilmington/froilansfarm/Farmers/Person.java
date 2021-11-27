@@ -14,9 +14,13 @@ public abstract class Person implements NoiseMaker, Eater {
     private List<Edible> mealsEaten;
 
 
-    public Person(String name){
+
+    public Person(String name) {
+
         this.name = name;
+
         this.mealsEaten = new ArrayList<>();
+
 
     }
 
@@ -27,7 +31,6 @@ public abstract class Person implements NoiseMaker, Eater {
     public void setName(String name) {
         this.name = name;
     }
-
 
 
     @Override

@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.Crop.CropRow;
 import com.zipcodewilmington.froilansfarm.Vehicles.CropDuster;
 import org.junit.Assert;
 import org.junit.Test;
@@ -35,32 +36,69 @@ public class CropDusterTest {
         Assert.assertNotEquals(expected, actual);
     }
 
+
     @Test
     public void testFertilize1() {
         //given
         CropDuster cropDuster = new CropDuster();
-        String expected = "Time for my favorite job--fertilizing!";
-
-
+        Integer expected = 2;
+        CropRow corn1 = new CropRow();
+        CropRow corn2 = new CropRow();
         //when
-        String actual = cropDuster.fertilize();
+        cropDuster.fertilize(corn1);
+        cropDuster.fertilize(corn2);
+        Integer actual = cropDuster.getCountOfFertilizedCrops();
+
 
         //then
         Assert.assertEquals(expected, actual);
+
     }
 
     @Test
     public void testFertilize2() {
         //given
         CropDuster cropDuster = new CropDuster();
-        String expected = "nahhhh not doing that today";
-
-
+        Integer expected = 5;
+        CropRow corn1 = new CropRow();
+        CropRow corn2 = new CropRow();
         //when
-        String actual = cropDuster.fertilize();
+        cropDuster.fertilize(corn1);
+        cropDuster.fertilize(corn2);
+        Integer actual = cropDuster.getCountOfFertilizedCrops();
+
 
         //then
         Assert.assertNotEquals(expected, actual);
+
+    }
+
+    @Test
+    public void testMakeNoise1() {
+        //given
+        CropDuster cropDuster = new CropDuster();
+        String expected = "Vrooooooooooom";
+
+        //when
+        String actual = cropDuster.makeNoise();
+
+        //then
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void testMakeNoise2() {
+        //given
+        CropDuster cropDuster = new CropDuster();
+        String expected = "Choo Choo";
+
+        //when
+        String actual = cropDuster.makeNoise();
+
+        //then
+        Assert.assertNotEquals(expected, actual);
+
     }
 
 }
