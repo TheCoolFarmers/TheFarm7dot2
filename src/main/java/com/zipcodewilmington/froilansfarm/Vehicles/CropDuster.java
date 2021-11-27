@@ -12,6 +12,7 @@ public class CropDuster extends AirCraft implements FarmVehicle {
 
 
     List<CropRow> fertilizedList = new ArrayList<CropRow>();
+    CropDuster cropDuster = new CropDuster();
 
     public void CropDuster() {
 
