@@ -4,6 +4,7 @@ import com.zipcodewilmington.froilansfarm.Farmers.Person;
 
 public abstract class Rider extends Person {
 
+
     private Rideable rideable;
 
     public Rider(String name) {
@@ -24,7 +25,6 @@ public abstract class Rider extends Person {
         }
 
     }
-
 
 
 }

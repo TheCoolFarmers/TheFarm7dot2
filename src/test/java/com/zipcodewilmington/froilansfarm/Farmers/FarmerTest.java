@@ -46,7 +46,7 @@ public class FarmerTest {
         //when
         farmer.ride(new Horse("Donkey"));
         //then
-        Assert.assertTrue(farmer.hasRideable());
+        Assert.assertNotNull(farmer.hasRideable());
     }
 
     @Test
