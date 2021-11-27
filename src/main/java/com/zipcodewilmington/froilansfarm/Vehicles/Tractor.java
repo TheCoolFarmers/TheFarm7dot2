@@ -2,6 +2,7 @@ package com.zipcodewilmington.froilansfarm.Vehicles;
 
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.Rider;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,21 +35,9 @@ public class Tractor implements FarmVehicle {
     }
 
 
-
     @Override
     public Boolean hasRider() {
-        return null;
-    }
-
-    @Override
-    public void setRider(Rider rider) {
-
-
-    }
-
-    @Override
-    public Boolean hasRider() {
-        if(rider != null) {
+        if (rider != null) {
             return true;
         } else {
             return false;
@@ -59,6 +48,11 @@ public class Tractor implements FarmVehicle {
     public void setRider(Rider rider) {
 
         this.rider = rider;
+    }
+
+    @Override
+    public boolean canRide() {
+        return false;
     }
 }
 
