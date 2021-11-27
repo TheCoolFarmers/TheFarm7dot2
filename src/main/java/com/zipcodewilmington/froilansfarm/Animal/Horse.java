@@ -22,11 +22,6 @@ public class Horse extends Animal implements Rideable {
         this.rider = rider;
     }
 
-    @Override
-    public boolean canRide() {
-        return true;
-    }
-
     public Boolean hasRider(){
         if(rider != null) {
             return true;
