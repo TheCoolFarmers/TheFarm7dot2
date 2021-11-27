@@ -45,9 +45,15 @@ public class CropDuster extends AirCraft implements FarmVehicle {
     }
 
 
-    public boolean canRide(Rider Rider) {
-        return true;
+
+    @Override
+    public Boolean hasRider() {
+        return null;
+
     }
+
+    @Override
+    public void setRider(Rider rider) {
 
 
     @Override
@@ -62,5 +68,6 @@ public class CropDuster extends AirCraft implements FarmVehicle {
     @Override
     public void setRider(Rider rider) {
         this.rider = rider;
+
     }
 }

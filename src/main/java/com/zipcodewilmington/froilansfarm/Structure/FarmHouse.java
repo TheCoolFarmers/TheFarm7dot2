@@ -6,8 +6,13 @@ import com.zipcodewilmington.froilansfarm.Farmers.Person;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FarmHouse implements Structure<Person>{
+public class FarmHouse implements Structure<Person> {
     private List<Person> personList = new ArrayList<>();
+
+    @Override
+    public Integer getCount() {
+        return personList.size();
+    }
 
     @Override
     public void add(Person person) {
@@ -16,13 +21,13 @@ public class FarmHouse implements Structure<Person>{
 
     @Override
     public void remove(Person person) {
-   personList.remove(person);
+        personList.remove(person);
     }
 
     @Override
     public Person getByName(String name) {
-        for(Person person : personList){
-            if(person.getName().equals(name)){
+        for (Person person : personList) {
+            if (person.getName().equals(name)) {
                 return person;
             }
         }

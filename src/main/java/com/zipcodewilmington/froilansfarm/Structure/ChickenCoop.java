@@ -10,9 +10,15 @@ public class ChickenCoop implements Structure<Chicken>{
 
     private List<Chicken> chickenList = new ArrayList<>();
 
+
+    @Override
+    public Integer getCount() {
+        return chickenList.size();
+    }
+
     @Override
     public void add(Chicken chicken) {
-   chickenList.add(chicken);
+    chickenList.add(chicken);
     }
 
     @Override
