@@ -1,4 +1,8 @@
 package com.zipcodewilmington.froilansfarm.Crop;
 
-public class Tomato extends Produce{
+
+import com.zipcodewilmington.froilansfarm.Edible;
+
+public class Tomato implements Edible {
+
 }

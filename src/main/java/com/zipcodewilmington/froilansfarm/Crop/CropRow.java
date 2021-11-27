@@ -5,18 +5,18 @@ import java.util.List;
 
 public class CropRow {
 
-    private List<Crop> cropRow;
-
+    private List<Crop> crops;
     public CropRow(){
-        this.cropRow = new ArrayList<>();
-
+        crops = new ArrayList<Crop>();
     }
-
-    public void add(Crop crop){
-        cropRow.add(crop);
+    public void addCrop(Crop crop){
+        crops.add(crop);
     }
+    public void removeCrop(Crop crop) {
+        crops.remove(crop);
+    }
+    public List<Crop> getCropList() {
+        return crops;
 
-    public List<Crop> getCropRow() {
-        return cropRow;
     }
 }
