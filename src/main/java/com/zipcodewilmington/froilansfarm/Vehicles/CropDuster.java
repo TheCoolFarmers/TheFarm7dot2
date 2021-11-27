@@ -12,6 +12,7 @@ public class CropDuster extends AirCraft implements FarmVehicle {
 
 
     List<CropRow> fertilizedList = new ArrayList<CropRow>();
+    Rider rider;
 
     public void CropDuster() {
 
@@ -44,11 +45,15 @@ public class CropDuster extends AirCraft implements FarmVehicle {
 
     @Override
     public Boolean hasRider() {
-        return null;
+        if (rider != null) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
     public void setRider(Rider rider) {
-
+        this.rider = rider;
     }
 }

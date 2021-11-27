@@ -1,6 +1,7 @@
-package com.zipcodewilmington.froilansfarm.VehiclesTests;
+package com.zipcodewilmington.froilansfarm.Vehicles;
 
 import com.zipcodewilmington.froilansfarm.Crop.CropRow;
+import com.zipcodewilmington.froilansfarm.Farmers.Farmer;
 import com.zipcodewilmington.froilansfarm.Farmers.Pilot;
 import com.zipcodewilmington.froilansfarm.Rider;
 import com.zipcodewilmington.froilansfarm.Vehicles.CropDuster;
@@ -141,23 +142,13 @@ public class CropDusterTest {
         Assert.assertNotEquals(expected, actual);
     }
 
-    @Test
-    public void testCanRide1() {
-        //given
-        CropDuster cropDuster = new CropDuster();
-
-
-        //when
-        boolean actual = cropDuster.canRide();
-
-        //then
-        Assert.assertTrue(actual);
-    }
 
     @Test
     public void testHasRider1() {
         //given
         CropDuster cropDuster = new CropDuster();
+        Rider rider = new Farmer("Froilanda");
+        cropDuster.setRider(rider);
 
         //when
         boolean actual = cropDuster.hasRider();
@@ -165,7 +156,5 @@ public class CropDusterTest {
         //then
         Assert.assertTrue(actual);
     }
-
-
 
 }
