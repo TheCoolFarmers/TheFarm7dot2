@@ -57,8 +57,6 @@ public class FarmHouseTest {
 
         //then
         Assert.assertNotNull(actual);
-
-
     }
 
 }

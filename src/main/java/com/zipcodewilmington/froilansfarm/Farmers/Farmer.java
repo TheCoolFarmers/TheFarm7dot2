@@ -18,6 +18,7 @@ public class Farmer extends Rider implements Eater, Botanist {
     }
 
 
+
     @Override
     public String getName() {
         return name;
