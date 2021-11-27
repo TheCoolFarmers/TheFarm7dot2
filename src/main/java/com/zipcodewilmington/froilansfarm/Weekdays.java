@@ -4,34 +4,36 @@ public class Weekdays {
 
 
 
-    public void sunday(){
+    public void Sunday(){
 
 
     }
 
-    public void monday(){
+    public void Monday(){
 
 
     }
 
-    public  void tuesday(){
+    public  void Tuesday(){
 
     }
 
-    public void wednesday(){
+    public void Wednesday(){
 
 
     }
 
-    public void thursday(){
+    public void Thursday(){
 
     }
 
-    public void friday(){
+    public void Friday(){
 
     }
 
-    public void saturday(){
+
+
+    public void Saturday(){
 
     }
 }
