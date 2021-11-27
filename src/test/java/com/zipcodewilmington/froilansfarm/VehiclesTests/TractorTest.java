@@ -1,11 +1,10 @@
 package com.zipcodewilmington.froilansfarm.VehiclesTests;
 
-import com.zipcodewilmington.froilansfarm.Crop.CropRow;
+
 import com.zipcodewilmington.froilansfarm.Crop.EarCorn;
 import com.zipcodewilmington.froilansfarm.Crop.Tomato;
 import com.zipcodewilmington.froilansfarm.Edible;
-import com.zipcodewilmington.froilansfarm.Rider;
-import com.zipcodewilmington.froilansfarm.Vehicles.CropDuster;
+
 import com.zipcodewilmington.froilansfarm.Vehicles.Tractor;
 import org.junit.Assert;
 import org.junit.Test;

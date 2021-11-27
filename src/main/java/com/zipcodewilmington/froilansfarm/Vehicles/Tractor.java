@@ -9,7 +9,8 @@ public class Tractor implements FarmVehicle {
 
     private Rider rider;
     List<Edible> edibleList = new ArrayList<Edible>();
-
+    Tractor redTractor = new Tractor();
+    Tractor greenTractor = new Tractor();
 
     public void Tractor() {
 
