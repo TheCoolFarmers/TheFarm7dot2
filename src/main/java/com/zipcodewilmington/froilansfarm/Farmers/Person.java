@@ -23,6 +23,10 @@ public abstract class Person implements NoiseMaker, Eater {
 
     }
 
+    public Person() {
+
+    }
+
     public String getName() {
         return name;
     }
