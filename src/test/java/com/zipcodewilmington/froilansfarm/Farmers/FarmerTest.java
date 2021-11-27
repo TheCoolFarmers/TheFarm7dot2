@@ -54,11 +54,11 @@ public class FarmerTest {
 
         //given
         CropRow cropRow = new CropRow();
-        Assert.assertEquals(0,cropRow.getCropRow().size());
+        Assert.assertEquals(0,cropRow.getCropList().size());
         //when
         farmer.plantCrop(cropRow, new CornStalk());
         //then
-        Assert.assertEquals(1, cropRow.getCropRow().size());
+        Assert.assertEquals(1, cropRow.getCropList().size());
     }
 
 }
