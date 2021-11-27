@@ -52,7 +52,7 @@ public class StableTest {
         Horse horse1 = new Horse("Bella");
         Horse horse2 = new Horse("Tucker");
         Horse horse3 = new Horse("Fancy");
-        Integer expected = 3;
+
         //when
         stable.add(horse1);
         stable.add(horse2);
