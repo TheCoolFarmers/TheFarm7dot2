@@ -5,5 +5,5 @@ import com.zipcodewilmington.froilansfarm.Crop.CropRow;
 
 public interface Botanist {
 
-    public void plantCrop(CropRow cropRow, Crop crop);
+    public void plantCrop(CropRow cropRow);
 }
