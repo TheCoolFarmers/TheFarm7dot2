@@ -20,6 +20,7 @@ public class HorseTest {
         this.horse = new Horse(name);
     }
 
+
     @Test
     public void makeNoise() {
         //given
