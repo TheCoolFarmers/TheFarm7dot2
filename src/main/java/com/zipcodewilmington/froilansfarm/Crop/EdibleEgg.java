@@ -1,13 +1,8 @@
 package com.zipcodewilmington.froilansfarm.Crop;
 
-public class EdibleEgg {
 
+import com.zipcodewilmington.froilansfarm.Edible;
 
-    public Boolean hasBeenFertilized(){
-
-        return (Boolean) true;
-    }
-
-
+public class EdibleEgg implements Edible {
 
 }

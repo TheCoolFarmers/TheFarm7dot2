@@ -34,10 +34,10 @@ public class Tractor implements FarmVehicle {
 
     @Override
     public Boolean hasRider() {
-        if (rider == null) {
-            return false;
-        } else {
+        if (rider != null) {
             return true;
+        } else {
+            return false;
         }
     }
 
