@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Tuesday {
+public class TuesdayTest {
 
     private Tractor tractor;
     private List<Edible> newCrop;
