@@ -1,5 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Farmers;
 
+import com.zipcodewilmington.froilansfarm.Crop.Crop;
+import com.zipcodewilmington.froilansfarm.Crop.CropRow;
 import com.zipcodewilmington.froilansfarm.Eater;
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.NoiseMaker;
