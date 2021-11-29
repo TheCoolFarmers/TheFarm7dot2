@@ -28,8 +28,7 @@ public class SundayTest {
     private CropRow crop;
     private List<Produce> mealsEaten;
     private List<Crop> cropRow;
-    private Crop tomatoPlant;
-    private Crop cornStalk;
+
 
     @Before
     public void setUp(){
@@ -43,8 +42,7 @@ public class SundayTest {
         this.crop = new CropRow();
         this.mealsEaten = new ArrayList<>();
         this.cropRow = new ArrayList<>();
-        this.tomatoPlant = new TomatoPlant();
-        this.cornStalk = new CornStalk();
+
 
     }
 
