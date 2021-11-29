@@ -21,7 +21,7 @@ public class FarmerTest {
     }
 
     @Test
-    public void getName() {
+    public void TestGetName() {
         //given
         //when
         String actual = farmer.getName();
@@ -30,7 +30,7 @@ public class FarmerTest {
     }
 
     @Test
-    public void eat() {
+    public void TestEat() {
         Assert.assertFalse(farmer.hasEaten());
         //given
         //when
@@ -40,7 +40,7 @@ public class FarmerTest {
     }
 
     @Test
-    public void ride() {
+    public void TestRide() {
         Assert.assertFalse(farmer.hasRideable());
         //given
         //when

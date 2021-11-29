@@ -1,6 +1,5 @@
 package com.zipcodewilmington.froilansfarm.WeekDays;
 
-import com.zipcodewilmington.froilansfarm.Animal.Horse;
 import com.zipcodewilmington.froilansfarm.Crop.*;
 import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.Farmers.Froilan;
@@ -42,7 +41,7 @@ public class TuesdayTest {
     }
 
     @Test
-    public void hasHarvest(){
+    public void testHasHarvest(){
         //given
         //when
         Integer expected = 3;
