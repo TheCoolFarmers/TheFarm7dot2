@@ -54,5 +54,7 @@ public abstract class Person implements NoiseMaker, Eater {
         }
     }
 
-
+    public Integer getMealsEaten() {
+        return mealsEaten.size();
+    }
 }
